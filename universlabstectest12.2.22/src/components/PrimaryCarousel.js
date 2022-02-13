@@ -24,7 +24,7 @@ import img3 from "../assets/img/Harley.jpg";
 
 function Card({ slide }) {
   return (
-    <Carousel fade>
+    <Carousel fade controls={false} interval={5000}>
       <Carousel.Item>
         <img className="d-block w-100" src={img1} alt="First slide" />
         <Carousel.Caption>
