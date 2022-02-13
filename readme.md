@@ -25,8 +25,8 @@ Build Requirements:
 ```
 
 - The carousel component should loop through a maximum of 3 slides, but should accept fewer slides as well
-- The carousel should show each slide for 5 seconds before animating to the next active slide, the carousel should loop between slides infinitely
-- On page load, the carousel should animate elements in, staggering each element and fading in their opacity
+- The carousel should show each slide for 5 seconds before animating to the next active slide, the carousel should loop between slides infinitely yes 
+- On page load, the carousel should animate elements in, staggering each element and fading in their opacity yes
 - The active carousel slide dot should pulse blue
 - The active carousel slide should change the background image, the background image should fade to the new image
 - Implement desktop design only

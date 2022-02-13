@@ -1,69 +1,49 @@
-export const slideObjArr = [
-  {
-    heading: "See the Big Picture, Act on the Small Details",
-    cta: {
-      label: "CONTACT US",
-      url: "#",
-    },
-    slides: {
-      title: "Carousel 1",
-      excerpt: "this is a para",
-      backgroundImage: `${process.env.PUBLIC_URL}/assets/images/finn.jpg`,
-      cta: {
-        label: "READ NOW",
-        url: "#",
-      },
-    },
-  },
-  {
-    heading: "Slide 2 header",
-    cta: {
-      label: "cta label",
-      url: "#",
-    },
-    slides: {
-      title: "Carousel 2",
-      excerpt: "this is a para2",
-      backgroundImage: `${process.env.PUBLIC_URL}/assets/images/harley.jpg`,
-      cta: {
-        label: "READ NOW 2",
-        url: "#",
-      },
-    },
-  },
-];
-
 export const websiteInformation = {
-  heading: "stuff",
+  heading: "See the Big Picture, Act on the Small Details",
   cta: {
-    label: "stuff",
-    url: "stuff",
+    label: "CONTACT US",
+    url: "#",
   },
   slides: [
     {
-      title: "Carousel 1",
-      excerpt: "this is a para2",
-      backgroundImage: `${process.env.PUBLIC_URL}/assets/images/harley.jpg`,
+      title: "Insight Title Goes Here",
+      titlestyle: "title1",
+      dotstyle: "dot1 pulsating-circle",
+      dotinact: "dot1 pulse-circle ",
+      excerpt: "this is a para",
+      excerptstyle: "excerptstyle",
+      backgroundImage: `${process.env.PUBLIC_URL}/assets/images/prairie.jpg`,
       cta: {
-        label: "READ NOW 2",
+        label: "READ NOW",
+        labelstyle: "lbl1",
         url: "#",
       },
     },
     {
-      title: "Carousel 2",
+      title: "Model Title Goes Here",
+      titlestyle: "title2",
+      dotstyle: "dot2 pulsating-circle",
+      dotinact: "dot2 pulse-circle ",
       excerpt: "this is a para2",
-      backgroundImage: `${process.env.PUBLIC_URL}/assets/images/harley.jpg`,
+      excerptstyle: "excerptstyle2",
+      backgroundImage: `${process.env.PUBLIC_URL}/assets/images/waves.jpg`,
       cta: {
-        label: "READ NOW 2",
+        label: "VIEW NOW",
+        labelstyle: "lbl2",
         url: "#",
       },
     },
     {
-      title: "Carousel 2",
-      excerpt: "this is a para2",
-      backgroundImage: `${process.env.PUBLIC_URL}/assets/images/harley.jpg`,
+      title: "Latest Webinar Sign Up",
+      titlestyle: "title3",
+      dotstyle: "dot3 pulsating-circle",
+      dotinact: "dot3 pulse-circle ",
+      excerpt: "this is a para3",
+      excerptstyle: "excerptstyle3",
+      backgroundImage: `${process.env.PUBLIC_URL}/assets/images/mountains.jpg`,
       cta: {
-        label: "READ NOW 2",
+        label: "REGISTER NOW",
+        labelstyle: "lbl3",
         url: "#",
       },
     },

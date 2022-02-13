@@ -15,6 +15,7 @@ export const Slides = () => {
       // Get the next index and check if valid index
       const newIndex = activeSlideIndex + 1;
       if (websiteInformation.slides[newIndex]) {
+        console.log(websiteInformation);
         setActiveSlideIndex(newIndex);
         setBackImage(images[newIndex]);
       } else {
@@ -35,8 +36,10 @@ export const Slides = () => {
           backgroundImage: `linear-gradient(0deg, rgba(23, 26, 26, 0.5), rgba(23, 26, 26, 0.5)), url(${backImage})`,
         }}
       >
+        <h1 className="heading">{websiteInformation["heading"]}</h1>
+        <a  className="contactBtn" href={websiteInformation.cta["url"]}>{websiteInformation.cta["label"]}</a>
         {websiteInformation.slides.map((slide, index) => (
-          <Slide {...slide} isActive={activeSlideIndex === index} />
+          <Slide key={index} {...slide} isActive={activeSlideIndex === index} />
         ))}
       </div>
     </div>

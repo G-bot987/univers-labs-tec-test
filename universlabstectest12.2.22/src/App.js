@@ -7,11 +7,10 @@ import PrimaryCarousel from "./components/PrimaryCarousel";
 function App() {
   return (
     <div className="">
-      {/* <div class="pulsating-circle"></div> */}
-      <div class="pulse-circle"></div>
-      <div class="hr"> </div>
       <Slides />
       {/* <PrimaryCarousel slide={slideObjArr} /> */}
+      <div className="vector37"></div>
+      <p className="scrollformore">SCROLL FOR MORE</p>
     </div>
   );
 }

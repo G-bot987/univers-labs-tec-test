@@ -1,6 +1,6 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
-import { slideObjArr } from "../data/slideinfo";
+import { websiteInformation } from "../data/slideinfo";
 import { CarouselItem } from "./CarouselItem";
 import { Button } from "react-bootstrap";
 import "./primaryCarousel.css";
@@ -26,7 +26,7 @@ function PrimaryCarousel({ slide }) {
   return (
     <div>
       <Carousel fade controls={false} indicators={false}>
-        {slideObjArr.map((item, index) => (
+        {websiteInformation.map((item, index) => (
           <Carousel.Item key={index} interval={5000}>
             <img
               className="d-block w-100"
