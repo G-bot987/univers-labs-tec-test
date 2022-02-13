@@ -1,9 +1,9 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
-
-import img1 from "../assets/img/finn.jpg";
-import img2 from "../assets/img/fudge.jpg";
-import img3 from "../assets/img/Harley.jpg";
+import { slideObjArr } from "../data/slideinfo";
+import { CarouselItem } from "./CarouselItem";
+import { Button } from "react-bootstrap";
+import "./primaryCarousel.css";
 
 // {
 //     heading
@@ -22,36 +22,30 @@ import img3 from "../assets/img/Harley.jpg";
 //     }[]
 //   }
 
-function Card({ slide }) {
+function PrimaryCarousel({ slide }) {
   return (
-    <Carousel fade controls={false} interval={5000}>
-      <Carousel.Item>
-        <img className="d-block w-100" src={img1} alt="First slide" />
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img className="d-block w-100" src={img2} alt="Second slide" />
-
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img className="d-block w-100" src={img3} alt="Third slide" />
-
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel>
+    <div>
+      <Carousel fade controls={false} indicators={false}>
+        {slideObjArr.map((item, index) => (
+          <Carousel.Item key={index} interval={5000}>
+            <img
+              className="d-block w-100"
+              src={item.slides.backgroundImage}
+              alt={item.slides.backgroundImage}
+            />
+            <h1>{item.heading}</h1>
+            <a href={item.cta.url} className="btn.info">
+              {item.cta.label}
+            </a>
+            <Carousel.Caption>
+              <h3>First slide label</h3>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+        ))}
+      </Carousel>
+    </div>
   );
 }
 
-export default Card;
+export default PrimaryCarousel;
