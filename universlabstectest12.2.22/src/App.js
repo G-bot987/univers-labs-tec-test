@@ -6,9 +6,10 @@ import PrimaryCarousel from "./components/PrimaryCarousel";
 
 function App() {
   return (
-    <div>
-      <div class="pulsating-circle"></div>
+    <div className="">
+      {/* <div class="pulsating-circle"></div> */}
       <div class="pulse-circle"></div>
+      <div class="hr"> </div>
       <Slides />
       {/* <PrimaryCarousel slide={slideObjArr} /> */}
     </div>

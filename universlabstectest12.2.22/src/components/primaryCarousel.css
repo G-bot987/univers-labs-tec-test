@@ -1,1 +1,10 @@
 .btn-info {width: 200px; height: 40px; background-color: aqua;}
+
+.imagebackground{
+    position: absolute;
+  width: 1440px;
+  height: 971px;
+  left: 0px;
+  top: 115px;
+  
+  }

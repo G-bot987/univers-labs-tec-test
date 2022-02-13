@@ -5,7 +5,8 @@ export const Slide = ({ title, excerpt, backgroundImage, cta, isActive }) => {
       {isActive ? "i am active" : "sad"}
       <a href={cta.url}>{cta.label}</a>
       {isActive ?  <div class="pulsating-circle"></div> : <div class="pulse-circle"></div> }
-   
+      {/* <div class="pulse-circle"></div>
+      */}
     </div>
   );
 };
