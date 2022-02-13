@@ -1,12 +1,16 @@
 import { useState, useEffect } from "react";
-
+import { Slides } from "./components/slides/Slides";
+import { slideObjArr } from "./data/slideinfo";
 import "./App.css";
-import Card from "./components/PrimaryCarousel";
+import PrimaryCarousel from "./components/PrimaryCarousel";
 
 function App() {
   return (
-    <div className="App">
-      <Card />
+    <div>
+      <div class="pulsating-circle"></div>
+      <div class="pulse-circle"></div>
+      <Slides />
+      {/* <PrimaryCarousel slide={slideObjArr} /> */}
     </div>
   );
 }
