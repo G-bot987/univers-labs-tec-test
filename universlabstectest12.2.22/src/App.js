@@ -6,7 +6,7 @@ import Card from "./components/PrimaryCarousel";
 function App() {
   return (
     <div className="App">
-      <p>sdkfjh</p>
+      <Card />
     </div>
   );
 }
