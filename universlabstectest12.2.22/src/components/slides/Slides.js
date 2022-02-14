@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import { IoIosArrowRoundForward } from "react-icons/io";
 import { Slide } from "../slide/Slide";
 import { websiteInformation } from "../../data/slideinfo";
 import img1 from "../../assets/images/prairie.png";
@@ -36,11 +36,14 @@ export const Slides = () => {
     >
       <h1 className="heading">{websiteInformation["heading"]}</h1>
       <a className="contactBtn" href={websiteInformation.cta["url"]}>
-        {websiteInformation.cta["label"]}
+        {websiteInformation.cta["label"]}  <IoIosArrowRoundForward className="conarrow"/>
       </a>
-      {websiteInformation.slides.map((slide, index) => (
+      <div className="maincontainer">
+{websiteInformation.slides.map((slide, index) => (
         <Slide key={index} {...slide} isActive={activeSlideIndex === index} />
       ))}
+      </div>
+      
     </div>
   );
 };
