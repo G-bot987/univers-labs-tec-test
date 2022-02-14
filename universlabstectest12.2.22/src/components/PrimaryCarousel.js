@@ -1,8 +1,8 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
 import { websiteInformation } from "../data/slideinfo";
-import { CarouselItem } from "./CarouselItem";
-import { Button } from "react-bootstrap";
+// import { CarouselItem } from "./CarouselItem";
+// import { Button } from "react-bootstrap";
 import "./primaryCarousel.css";
 
 // {
@@ -22,7 +22,7 @@ import "./primaryCarousel.css";
 //     }[]
 //   }
 
-function PrimaryCarousel({ slide }) {
+function PrimaryCarousel() {
   return (
     <div>
       <Carousel fade controls={false} indicators={false}>

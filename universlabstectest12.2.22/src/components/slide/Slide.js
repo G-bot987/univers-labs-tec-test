@@ -1,7 +1,7 @@
 export const Slide = ({
   title,
   excerpt,
-  backgroundImage,
+//   backgroundImage,
   cta,
   isActive,
   excerptstyle,

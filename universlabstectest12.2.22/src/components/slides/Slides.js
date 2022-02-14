@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 
 import { Slide } from "../slide/Slide";
 import { websiteInformation } from "../../data/slideinfo";
-import img1 from "./prairie.png";
-import img2 from "./waves.png";
-import img3 from "./mountains.png";
+import img1 from "../../assets/images/prairie.png";
+import img2 from "../../assets/images/waves.png";
+import img3 from "../../assets/images/mountains.png";
 import "./style.css";
 export const Slides = () => {
   const images = [img1, img2, img3];
@@ -33,11 +33,13 @@ export const Slides = () => {
       <div
         className="imagebackground"
         style={{
-          backgroundImage: `linear-gradient(0deg, rgba(23, 26, 26, 0.5), rgba(23, 26, 26, 0.5)), url(${backImage})`,
+          backgroundImage: ` url(${backImage})`,
         }}
       >
         <h1 className="heading">{websiteInformation["heading"]}</h1>
-        <a  className="contactBtn" href={websiteInformation.cta["url"]}>{websiteInformation.cta["label"]}</a>
+        <a className="contactBtn" href={websiteInformation.cta["url"]}>
+          {websiteInformation.cta["label"]}
+        </a>
         {websiteInformation.slides.map((slide, index) => (
           <Slide key={index} {...slide} isActive={activeSlideIndex === index} />
         ))}

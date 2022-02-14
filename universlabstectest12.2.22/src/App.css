@@ -98,6 +98,17 @@ color: #FFFFFF;
   animation: pulse-dot 1.25s cubic-bezier(0.455, 0.03, 0.515, 0.955) -.4s infinite;
 }
 
+.imagebackground{
+  position: absolute;
+width: 1440px;
+height: 971px;
+left: 0px;
+top: 115px;
+
+
+
+}
+
 @keyframes pulse-ring {
   0% {
     transform: scale(.33);
