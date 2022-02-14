@@ -1,7 +1,7 @@
 export const Slide = ({
   title,
   excerpt,
-  //   backgroundImage,
+
   cta,
   isActive,
   excerptstyle,
@@ -12,7 +12,7 @@ export const Slide = ({
   return (
     <div>
       <p className={titlestyle}>{title}</p>
-      {/* {isActive ? "i am active" : "sad"} */}
+     
       <a href={cta.url} className={cta.labelstyle}>
         {cta.label}
       </a>
