@@ -1,13 +1,4 @@
-.btn2{
-    position: inherit;
-    
-    width: 158px;
-    height: 30px;
-text-align: center;
-    text-decoration: none;
-    background: #42C7E5;
-    border-radius: 2px;
-}
+
 .btnarrow{position: static;
     width: 16px;
     height: 12px;
