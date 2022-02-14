@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/univers-labs-tec-test/static/css/main.ed8b0c65.css",
-    "main.js": "/univers-labs-tec-test/static/js/main.a89df0e6.js",
+    "main.css": "/univers-labs-tec-test/static/css/main.56308d89.css",
+    "main.js": "/univers-labs-tec-test/static/js/main.feb5511d.js",
     "static/js/787.4dd1e79b.chunk.js": "/univers-labs-tec-test/static/js/787.4dd1e79b.chunk.js",
     "static/media/waves.png": "/univers-labs-tec-test/static/media/waves.969b92682d7ae4209a61.png",
     "static/media/mountains.png": "/univers-labs-tec-test/static/media/mountains.a24b8d18db35af9ef69a.png",
     "static/media/prairie.png": "/univers-labs-tec-test/static/media/prairie.31b0ea313f6a2baa482b.png",
     "index.html": "/univers-labs-tec-test/index.html",
-    "main.ed8b0c65.css.map": "/univers-labs-tec-test/static/css/main.ed8b0c65.css.map",
-    "main.a89df0e6.js.map": "/univers-labs-tec-test/static/js/main.a89df0e6.js.map",
+    "main.56308d89.css.map": "/univers-labs-tec-test/static/css/main.56308d89.css.map",
+    "main.feb5511d.js.map": "/univers-labs-tec-test/static/js/main.feb5511d.js.map",
     "787.4dd1e79b.chunk.js.map": "/univers-labs-tec-test/static/js/787.4dd1e79b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ed8b0c65.css",
-    "static/js/main.a89df0e6.js"
+    "static/css/main.56308d89.css",
+    "static/js/main.feb5511d.js"
   ]
 }
