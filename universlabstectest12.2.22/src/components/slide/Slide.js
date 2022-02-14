@@ -1,3 +1,5 @@
+import { IoIosArrowRoundForward } from "react-icons/io";
+
 export const Slide = ({
   title,
   excerpt,
@@ -12,9 +14,10 @@ export const Slide = ({
   return (
     <div>
       <p className={titlestyle}>{title}</p>
-     
+
       <a href={cta.url} className={cta.labelstyle}>
         {cta.label}
+        <IoIosArrowRoundForward className="btnarrow"/>
       </a>
       {isActive ? (
         <div className={dotstyle}></div>
