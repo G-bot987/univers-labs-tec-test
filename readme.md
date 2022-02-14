@@ -1,3 +1,7 @@
+deployed https://g-bot987.github.io/univers-labs-tec-test/
+
+
+
 Create a React application to display a hero carousel that animates between slides. We expect this to take ~3-4 hours to complete (but we're not counting!). Your test will be judged on attention to design, quality of code and 
 
 Build Requirements:
