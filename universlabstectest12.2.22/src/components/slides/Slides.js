@@ -5,7 +5,6 @@ import { websiteInformation } from "../../data/slideinfo";
 import img1 from "../../assets/images/prairie.png";
 import img2 from "../../assets/images/waves.png";
 import img3 from "../../assets/images/mountains.png";
-import "./style.css";
 export const Slides = () => {
   const images = [img1, img2, img3];
   const [activeSlideIndex, setActiveSlideIndex] = useState(0);
