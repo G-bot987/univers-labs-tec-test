@@ -25,7 +25,7 @@ import "./primaryCarousel.css";
 function PrimaryCarousel() {
   return (
     <div>
-      <Carousel fade controls={false} indicators={false}>
+      {/* <Carousel fade controls={false} indicators={false}>
         {websiteInformation.map((item, index) => (
           <Carousel.Item key={index} interval={5000}>
             <img
@@ -43,7 +43,7 @@ function PrimaryCarousel() {
             </Carousel.Caption>
           </Carousel.Item>
         ))}
-      </Carousel>
+      </Carousel> */}
     </div>
   );
 }

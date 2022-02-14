@@ -29,21 +29,19 @@ export const Slides = () => {
   }, [activeSlideIndex, backImage]);
 
   return (
-    <div>
-      <div
-        className="imagebackground"
-        style={{
-          backgroundImage: ` url(${backImage})`,
-        }}
-      >
-        <h1 className="heading">{websiteInformation["heading"]}</h1>
-        <a className="contactBtn" href={websiteInformation.cta["url"]}>
-          {websiteInformation.cta["label"]}
-        </a>
-        {websiteInformation.slides.map((slide, index) => (
-          <Slide key={index} {...slide} isActive={activeSlideIndex === index} />
-        ))}
-      </div>
+    <div
+      className="imagebackground"
+      style={{
+        backgroundImage: `linear-gradient(0deg, rgba(23, 26, 26, 0.5), rgba(23, 26, 26, 0.5)), url(${backImage})`,
+      }}
+    >
+      <h1 className="heading">{websiteInformation["heading"]}</h1>
+      <a className="contactBtn" href={websiteInformation.cta["url"]}>
+        {websiteInformation.cta["label"]}
+      </a>
+      {websiteInformation.slides.map((slide, index) => (
+        <Slide key={index} {...slide} isActive={activeSlideIndex === index} />
+      ))}
     </div>
   );
 };

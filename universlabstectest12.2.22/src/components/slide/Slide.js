@@ -1,30 +1,27 @@
 export const Slide = ({
   title,
   excerpt,
-//   backgroundImage,
+  //   backgroundImage,
   cta,
   isActive,
   excerptstyle,
   titlestyle,
   dotstyle,
-  dotinact
+  dotinact,
 }) => {
   return (
-    <div
-  
-    >
+    <div>
       <p className={titlestyle}>{title}</p>
       {/* {isActive ? "i am active" : "sad"} */}
       <a href={cta.url} className={cta.labelstyle}>
         {cta.label}
       </a>
       {isActive ? (
-        <div class={dotstyle}></div>
+        <div className={dotstyle}></div>
       ) : (
-        <div class={dotinact}></div>
+        <div className={dotinact}></div>
       )}
       <p className={excerptstyle}>{excerpt} </p>
-    
     </div>
   );
 };
